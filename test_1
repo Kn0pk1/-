@@ -11,17 +11,17 @@ int main()
 
     while (p != 2)
     {
-        cout << "1 = calculator \n 2 - exit \n";
+        cout << "1 = Начать \n 2 - Закончить \n";
         cin >> p;
         switch (p)
         {
         case 1:
         {
-            cout << "First number >> ";
+            cout << "Первое число >> ";
             cin >> a;
-            cout << "Action with numbers >> ";
+            cout << "Математический знак >> ";
             cin >> d;
-            cout << "Second number >> ";
+            cout << "Второе число >> ";
             cin >> b;
             if (d == '+')
             {
@@ -49,7 +49,7 @@ int main()
                 }
                 catch (int q)
                 {
-                    cout << " Error number " << q << " >> divide by 0!" << endl;
+                    cout << " Ошибка деления на " << q << "!"  << endl;
                 }
             }
         }
@@ -58,7 +58,7 @@ int main()
             break;
         }
         }
-        cout << "Result = " << c << endl;
+        cout << "Результат = " << c << endl;
     }
 }
 2)
