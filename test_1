@@ -70,3 +70,26 @@ int main()
     for (int i = n; i > 0; i --)
         std::cout << i << " ";
 }
+3)
+#include <iostream>
+#include <string>
+int main()
+{
+    system("chcp 65001");
+    int n;
+    std::string apple = "ÿáëîê";
+    std::cout<<"Ââåäèòå êîë-âî ÿáëîê:";
+    std::cin >> n;
+    {
+        if ((n==1) || (n % 10 == 1)) {
+            apple = apple +"î";
+        }
+        if ((n > 1 && n < 5) || (n % 10 > 1 && n % 10 < 5)) {
+            apple = apple + "à";
+        }
+        if ((n >= 5 && n < 10) || (n % 10 >= 5 && n % 10 < 10) || (n % 100 > 10 && n % 100 < 15 )) {
+            apple = "ÿáëîê";
+        }
+        std::cout << n << ' ' << apple;
+    }
+}
